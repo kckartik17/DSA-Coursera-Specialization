@@ -49,7 +49,7 @@ int maxPairProduct(vi &nums) {
 
 	for (int b = 0; b < len; ++b)
 	{
-		if ((nums[b] != nums[i]) && ((j == -1) || (nums[b] > nums[j]))) {
+		if ((b != i) && ((j == -1) || (nums[b] > nums[j]))) {
 			j = b;
 		}
 	}
